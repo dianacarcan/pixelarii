@@ -81,3 +81,82 @@ body {
         color: white;
         padding: 10px 20px;
       }
+
+      main {
+        width: 850px;
+        margin-left: 60px;
+        margin-top: 40px;
+      }
+
+      header a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 3px 10px;
+        background-color: navy;
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
+      }
+
+      .byline {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 30px;
+        color: gray;
+      }
+
+      .avatar {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: navy;
+        color: white;
+        border-radius: 50%;
+        font-size: 14px;
+      }
+
+      .admin-actions {
+        margin-bottom: 20px;
+      }
+
+      .admin-actions button {
+        background-color: white;
+        border: 1px solid lightgray;
+        color: #222;
+        padding: 6px 14px;
+        margin-right: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      blockquote {
+        margin: 30px 0;
+        padding-left: 20px;
+        border-left: 4px solid navy;
+        font-style: italic;
+        color: #111;
+      }
+
+      .tags {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        padding: 0;
+        margin-top: 40px;
+      }
+
+      .tags li {
+        padding: 3px 10px;
+        background-color: #eee;
+        color: #222;
+        font-size: 12px;
+        border-radius: 4px;
+      }
