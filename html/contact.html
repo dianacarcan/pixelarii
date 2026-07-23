@@ -1,28 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Get in Touch
-    Have a story to share? A restaurant to recommend? I'd love to hear from you.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ninja - Contact</title>
 
-    Name
-    Your name
-    Email
-    your.email@example.com
-    Message
-    Your message...
-    Send Message
-    Other ways to reach me:
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+      }
 
-    Email: hello@foodninja.com
+      .container {
+        width: 850px;
+        margin-left: 60px;
+        margin-top: 40px;
+      }
 
-    Twitter: @foodninja
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 60px;
+        border-bottom: 1px solid lightgray;
+      }
 
-    Instagram: @foodninja.eats
-</body>
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav li {
+        margin-left: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      h1 {
+        margin-bottom: 5px;
+        font-family: "Times New Roman", Times, serif;
+        color: navy;
+        font-size: 56px;
+      }
+
+      h4 {
+        margin-top: 0;
+        color: gray;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      h2 {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 42px;
+        color: #111;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #222;
+      }
+
+      input,
+      textarea {
+        width: 500px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 120px;
+      }
+
+      input[type="submit"] {
+        width: auto;
+        background-color: navy;
+        color: white;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h3><strong>Food Ninja</strong></h3>
+
+      <ul>
+        <li><a href="article.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Get in Touch</h1>
+
+      <h4>
+        Have a story to share? A restaurant to recommend? I'd love to hear from
+        you.
+      </h4>
+
+      <form style="opacity: 70%">
+        <p>Name</p>
+        <input type="text" placeholder="Your name" />
+
+        <p>Email</p>
+        <input type="email" placeholder="your.email@example.com" />
+
+        <p>Message</p>
+        <textarea placeholder="Your message..."></textarea>
+
+        <br />
+        <input type="submit" value="Send Message" />
+      </form>
+
+      <h2>Other Ways to Reach Me</h2>
+
+      <p>Email: hello@foodninja.com</p>
+      <p>Twitter: @foodninja</p>
+      <p>Instagram: @foodninja.eats</p>
+    </div>
+  </body>
 </html>
-
