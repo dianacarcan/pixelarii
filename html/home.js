@@ -31,5 +31,11 @@ function renderArticleCard(article) {
 function renderCardList(articles) {
     const list = articles.map(article => renderArticleCard(article)).join("");
     document.getElementById("card-list").innerHTML = list;
-
 }
+
+let allArticles = [];
+
+document.addEventListener("DOMContentLoaded", async () => {
+    allArticles = await fetchArticles();
+    renderCardList(allArticles);
+});
