@@ -11,6 +11,7 @@ async function fetchArticles()
     catch (error)
     {
         console.error("Error fetching the articles.", error);
+        return [];
     }
 
 }
@@ -37,7 +38,11 @@ let allArticles = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
     allArticles = await fetchArticles();
-    renderCardList(allArticles);
+    if(allArticles.length === 0) {
+        document.getElementById("card-list").innerHTML = "Error while loading the DOM content"
+    } else {
+        renderCardList(allArticles);
+    }
 });
 
 const selector = document.querySelectorAll('[name="tags"]');
