@@ -13,6 +13,17 @@ async function fetchArticles()
         console.error("Error fetching the articles.", error);
     }
 
+}
 
-
+function renderArticleCard(article) {
+  return `
+  <article>
+    <div style="background-color: ${article.background};">${article.imagePlaceholder}</div>
+    <div class="tag"> ${article.category} </div>
+    <a href="article.html?slug=${article.slug}">${article.title} </a>
+    
+    <h4>${article.date} - ${article.readingTime}</h4>
+    <p>${article.excerpt}</p>
+  </article>
+  `;
 }
