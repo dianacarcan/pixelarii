@@ -27,3 +27,9 @@ function renderArticleCard(article) {
   </article>
   `;
 }
+
+function renderCardList(articles) {
+    const list = articles.map(article => renderArticleCard(article)).join("");
+    document.getElementById("card-list").innerHTML = list;
+
+}
