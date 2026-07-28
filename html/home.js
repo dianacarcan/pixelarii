@@ -39,3 +39,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     allArticles = await fetchArticles();
     renderCardList(allArticles);
 });
+
+const selector = document.querySelectorAll('[name="tags"]');
+
+selector.forEach( (element) => {
+    element.addEventListener("change", () => {
+        const checkedValues = Array.from(selector)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+        const filtered = allArticles.filter(article =>
+        checkedValues.length === 0 || checkedValues.includes(article.category)
+        );
+        renderCardList(filtered);
+    });
+});
+
+
