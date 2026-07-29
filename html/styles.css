@@ -1,10 +1,48 @@
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+h1 {
+    color: green;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.news-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.featured {
+    background-color: #3B82F6;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    .news-layout {
+        flex-direction: row;
+    }
+
+    .news-card {
+        
+    }
+
+    .featured {
+        flex: 2;
+    }
+
+    
+}
