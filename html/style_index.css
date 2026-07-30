@@ -1,7 +1,9 @@
 body {
+        display: flex;
+        flex-direction: column;
         font-family: Arial, sans-serif;
         background-color: white;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -14,15 +16,17 @@ body {
       }
 
       header {
-        margin-left: 100px;
-        align-items: center;
         display: flex;
+        border-bottom: 5px;
+        align-content:flex-start ;
+        gap: 500px;
+        border-bottom: 1px solid rgb(183, 183, 183);
+        padding-bottom: 15px;
+        align-items: center;
+        text-align: center;
         justify-content: space-between;
-        flex-direction: row;
-        column-gap: 200px;
-        flex-wrap: nowrap;
-        
-        
+        margin-top: 20px;
+        margin: 5px;
       }
 
       nav {
@@ -30,12 +34,13 @@ body {
         justify-content: space-between;
         margin-right: 20px;
         align-self:flex-end;
+        
       }
 
       nav ul {
         display: flex;
         list-style: none;
-        align-items: right;
+        justify-content: flex-end;
         margin-right: 20px;
         
       }
@@ -53,11 +58,18 @@ body {
         color: gray;
       }
 
+      nav a:hover {
+      color: black;
+      }
+
       h1 {
-        margin-bottom: 5px;
+        display: flex;
         font-family: "Times New Roman", Times, serif;
         color: #111;
-        font-size: 20px;
+        font-size: 30px;
+        margin: 0;
+        white-space: nowrap;
+        
       }
 
       h4 {
@@ -69,13 +81,17 @@ body {
 
       h3 {
         font-size: 20px;
+        color: #72757c;
+        font-weight: 300;
+        margin-top: 0px;
+        margin-bottom: 30px;
       }
 
       h2 {
         margin-top: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-family: "Times New Roman", Times, serif;
-        font-size: 36px;
+        font-size: 50px;
         color: navy;
         
       }
@@ -84,7 +100,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         margin-right: 10px;
         margin-top: 1px;
       }
@@ -157,6 +173,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
       }
 
       article {
@@ -183,3 +200,20 @@ body {
         font-size: 12px;
         border-radius: 4px;
       }
+      
+      @media (min-width: 768px){
+        body{
+          align-items: center;
+        }
+        h1{
+          white-space: nowrap;
+          align-items: flex-start;
+        }
+        header{
+          justify-content:center;
+          margin-top: 20px;
+          
+
+        }
+      }
+      
