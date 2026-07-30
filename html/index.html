@@ -12,27 +12,31 @@
       <h1>Food Ninja</h1>
       <nav>
         <ul>
-          <li><a href="#top">Blog</a></li>
+          <li><a href="#top"><strong>Blog</strong></a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-    <hr>
+      <hr>
     </header>
     <main>
     <section id="main-title">
     <h2 id="top">The Food Ninja Blog</h2>
     <h3>A blog about food, experiences, and recipes.</h3>
 
-    <form action=" ">
+    <form id="search-bar" action=" ">
       <input type="search" placeholder="Search for articles🔍">
     </form>
     <br>
-    <form action=" ">
-    <input type="checkbox" value="Travel"> Travel
-    <input type="checkbox" value="Food Theory"> Food Theory
-    <input type="checkbox" value="Recipes"> Recipes
-    <input type="checkbox" value="Restaurants"> Restaurants
+    <form id="filter-form" action=" ">
+    <input type="checkbox" id="Travel">
+    <label for="Travel" class="box">Travel</label>
+    <input type="checkbox" id="FoodTheory">
+    <label for="FoodTheory" class="box">Food Theory</label>
+    <input type="checkbox" id="Recipes">
+    <label for="Recipes" class="box">Recipes</label>
+    <input type="checkbox" id="Restaurants">
+    <label for="Restaurants" class="box">Restaurants</label>
     </form>
     </section>
     <br>
