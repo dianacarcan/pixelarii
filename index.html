@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Responsive News Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <link rel="stylesheet" href="html/styles.css" >
+  </head>
+  <body>
+    <div class="news-layout">
+      <article class="featured">
+        <i class="fa-regular fa-newspaper"></i>
+        <h1>Featured Story</h1>
+        <p>
+          This is today's main headline. It should receive the most attention
+          and therefore occupy more space on larger screens.
+        </p>
+      </article>
+
+      <aside class="sidebar">
+        <article class="news-card news-1">
+          <i class="fa-solid fa-earth-europe"></i>
+          <h2>World News</h2>
+          <p>Global events shaping today's headlines.</p>
+        </article>
+
+        <article class="news-card news-2">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Technology</h2>
+          <p>Latest updates from the tech industry.</p>
+        </article>
+
+        <article class="news-card news-3">
+          <i class="fa-regular fa-futbol"></i>
+          <h2>Sports</h2>
+          <p>Highlights from today's biggest matches.</p>
+        </article>
+      </aside>
+    </div>
+  </body>
+
+  <script>
+    try {
+      const response = await fetch("http://localhost:3000/articles");
+      const data = await response.json();
+      const titles = data.map((article) => {
+        return article.title;
+      });
+      console.log(titles);
+    } catch (error) {
+      console.error("Error fetching articles:", error);
+    }
+  </script>
+</html>
