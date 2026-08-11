@@ -1,0 +1,24 @@
+body {
+    background-color: #f0f0f0;
+}
+
+#main-title {
+    text-align:center;
+}
+
+h1 {
+    text-align:left;
+}
+
+nav {
+    text-align:right;
+}
+
+h2 {
+    color:darkblue
+}
+article {
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+}
