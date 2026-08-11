@@ -1,15 +1,16 @@
-import {Link} from "react-router-dom"
+import { Link as RouterLink } from 'react-router-dom'
+import { Link, Box } from '@mui/material'
 
 function Navbar() {
   return (
-    <nav>
-      <Link to="/">Food Ninja</Link>
-      <div>
-        <Link to="/"><p>Blog</p></Link>
-        <Link to="/about"><p>About</p></Link>
-        <Link to="/contact"><p>Contact</p></Link>
-      </div>
-    </nav>
+    <Box component="nav" sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+      <Link component={RouterLink} to="/">Food Ninja</Link>
+      <Box component="div" sx={{display: 'flex', gap: 5}}>
+        <Link component={RouterLink} to="/">Blog</Link>
+        <Link component={RouterLink} to="/about">About</Link>
+        <Link component={RouterLink} to="/contact">Contact</Link>
+      </Box>
+    </Box>
   )
 }
 

@@ -1,29 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from 'react-router-dom'
+import { Link, Box, List, ListItem } from '@mui/material'
 
 function Footer() {
   return (
-    <footer>
-      <Link to="/">Food Ninja</Link>
+    <Box component="footer">
+      <Link component={RouterLink} to="/">Food Ninja</Link>
 
-      <div>
-        <Link to="/"><p>Blog</p></Link>
-        <Link to="/about"><p>About</p></Link>
-        <Link to="/contact"><p>Contact</p></Link>
-      </div>
+      <Box sx={{display: 'flex', gap: 5}}>
+        <Link component={RouterLink} to="/">Blog</Link>
+        <Link component={RouterLink} to="/about">About</Link>
+        <Link component={RouterLink} to="/contact">Contact</Link>
+      </Box>
 
-      <div>
+      <Box>
         <span>Other ways to reach me:</span>
-        <ul style={{ listStyleType: "none" }}>
-          <li>Email: hello@foodninja.com</li>
-          <li>Twitter: @foodninja</li>
-          <li>Instagram: @foodninja.eats</li>
-        </ul>
-      </div>
+        <List sx={{listStyle: 'none',p: 0,m: 0,}}>
+          <ListItem>Email: hello@foodninja.com</ListItem>
+          <ListItem>Twitter: @foodninja</ListItem>
+          <ListItem>Instagram: @foodninja.eats</ListItem>
+        </List>
+      </Box>
 
-      <div>
+      <Box>
         <span>© 2026 Food Ninja</span>
-      </div>
-    </footer>
+      </Box>
+    </Box>
   );
 }
 
