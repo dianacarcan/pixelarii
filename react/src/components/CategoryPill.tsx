@@ -1,4 +1,4 @@
-export enum label {
+export enum Label {
    travel= "Travel",
    food_theory= "Food Theory",
    recipes= "Recipes",
