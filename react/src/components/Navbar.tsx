@@ -5,9 +5,9 @@ function Navbar() {
     <nav>
       <Link to="/">Food Ninja</Link>
       <div>
-        <Link to="/">Blog</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/"><p>Blog</p></Link>
+        <Link to="/about"><p>About</p></Link>
+        <Link to="/contact"><p>Contact</p></Link>
       </div>
     </nav>
   )
