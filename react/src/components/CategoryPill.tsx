@@ -1,5 +1,5 @@
 import {List, ListItem} from '@mui/material'
-import {Label} from "./CategoryPill.tsx";
+import {Label} from "./articles.ts";
 
 export const CategoryPill = () => {
     return (

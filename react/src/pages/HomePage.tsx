@@ -2,18 +2,11 @@ import theme from "../themes/theme.ts"
 import {ArticleCard} from "../components/ArticleCard.tsx"
 import {Label, Article, articles} from "../components/articles.ts"
 import {CategoryPill} from "../components/CategoryPill.tsx";
-import Footer from "../components/Footer.tsx";
-import Navbar from "../components/Navbar.tsx";
 import { Link, Box, Stack} from '@mui/material'
 
 function HomePage() {
   return (
     <Box>
-      <Box id="Header">
-        <h1>Food Ninja</h1>
-        <Navbar />
-      </Box>
-
       <Box id="Title">
         <h2>The Food Ninja Blog</h2>
         <h3>A blog about food, experiences, and recipes</h3>

@@ -16,7 +16,7 @@ export interface Article {
 export const articles: Article[] =[
     {
         id: 1,
-        imageUrl: "/img/greece-travel.png",
+        imageUrl: "src/components/img/greece-travel.png",
         label: Label[0],
         title: "What Traveling Greece For 2 Weeks Taught Me About Life",
         date: "Jun 21, 2021",
@@ -25,7 +25,7 @@ export const articles: Article[] =[
     },
     {
         id: 2,
-        imageUrl: "/img/chicken-nuggets.png",
+        imageUrl: "src/components/img/chicken-nuggets.png",
         label: Label[1],
         title: "Why You Should Never Order 12 Chicken Nuggets and Fries",
         date: "Aug 1, 2021",
@@ -34,7 +34,7 @@ export const articles: Article[] =[
     },
     {
         id: 3,
-        imageUrl: "/img/ramen-broth.png",
+        imageUrl: "src/components/img/ramen-broth.png",
         label: Label[2],
         title: "The Perfect Homemade Ramen Broth Recipe",
         date: "Sep 14, 2021",
@@ -43,7 +43,7 @@ export const articles: Article[] =[
     },
      {
         id: 4,
-        imageUrl: "/img/tokyo-restaurants.png",
+        imageUrl: "src/components/img/tokyo-restaurants.png",
         label: Label[3],
         title: "The Best Hidden Restaurants in Tokyo You Need to Visit",
         date: "Oct 3, 2021",
@@ -52,7 +52,7 @@ export const articles: Article[] =[
     },
     {
         id: 5,
-        imageUrl: "/img/vietnam-food-diary.png",
+        imageUrl: "src/components/img/vietnam-food-diary.png",
         label: Label[0],
         title: "Eating My Way Through Vietnam: A 10-Day Food Diary",
         date: "Nov 18, 2021",
@@ -61,7 +61,7 @@ export const articles: Article[] =[
     },
     {
         id: 6,
-        imageUrl: "/img/olive-oil.png",
+        imageUrl: "src/components/img/olive-oil.png",
         label: Label[1],
         title: "Why Expensive Olive Oil Is Almost Never Worth It",
         date: "Dec 5, 2021",
