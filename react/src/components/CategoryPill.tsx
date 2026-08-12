@@ -1,6 +1,1 @@
-export enum Label {
-   travel= "Travel",
-   food_theory= "Food Theory",
-   recipes= "Recipes",
-   restaurants= "Restaurants",
-}
+export type Label = "Travel" | "Food Theory" | "Recipes" | "Restaurants";
