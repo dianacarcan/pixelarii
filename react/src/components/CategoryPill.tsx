@@ -1,12 +1,12 @@
-import {List, ListItem} from '@mui/material'
+import {Stack, Chip} from '@mui/material'
 import {Label} from "./articles.ts";
 
 export const CategoryPill = () => {
     return (
-        <List>
-         {Label.map((label, index) => (
-            <ListItem key={index}>{label}</ListItem>
-         ))}
-        </List>
+        <Stack direction="row" spacing={2}>
+            {Label.map((label, index) => (
+                <Chip key={index} label={label} />
+            ))}
+        </Stack>
     );
 }

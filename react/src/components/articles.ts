@@ -25,7 +25,7 @@ export const articles: Article[] =[
     },
     {
         id: 2,
-        imageUrl: "src/components/img/chicken-nuggets.png",
+        imageUrl: "src/components/img/chicken-nuggets-fries.png",
         label: Label[1],
         title: "Why You Should Never Order 12 Chicken Nuggets and Fries",
         date: "Aug 1, 2021",

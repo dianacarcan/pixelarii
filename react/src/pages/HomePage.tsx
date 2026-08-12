@@ -1,18 +1,19 @@
-import theme from "../themes/theme.ts"
 import {ArticleCard} from "../components/ArticleCard.tsx"
-import {Label, Article, articles} from "../components/articles.ts"
+import {Article, articles} from "../components/articles.ts"
 import {CategoryPill} from "../components/CategoryPill.tsx";
-import { Link, Box, Stack} from '@mui/material'
+import {Container, Stack, Typography} from '@mui/material'
+import SearchBar from "../components/SearchBar.tsx"
 
 function HomePage() {
   return (
-    <Box>
-      <Box id="Title">
-        <h2>The Food Ninja Blog</h2>
-        <h3>A blog about food, experiences, and recipes</h3>
-        <input placeholder="Search articles..."></input>
+    <Container>
+      <Container id="Title">
+        <Typography variant="h1">The Food Ninja Blog</Typography>
+        <Typography variant="h2">A blog about food, experiences, and recipes</Typography>
+        <SearchBar />
         <CategoryPill />
-      </Box>
+      </Container>
+      
 
       <Stack>
         {articles.map((article: Article) => (
@@ -28,7 +29,7 @@ function HomePage() {
       </Stack>
 
 
-    </Box>
+    </Container>
   )
 }
 
