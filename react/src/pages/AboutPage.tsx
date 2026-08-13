@@ -1,5 +1,51 @@
 function AboutPage() {
-  return <h1>About</h1>
+  return (
+    <div className="container">
+      <h1>About Food Ninja</h1>
+      <h4>Exploring the world one meal at a time.</h4>
+
+      <p>
+        Welcome to Food Ninja, a blog dedicated to food culture, travel, and
+        the stories behind what we eat. I'm James Doe, a food writer and
+        passionate traveler who believes that understanding a place means
+        understanding its food.
+      </p>
+
+      <h2>My Story</h2>
+
+      <p>
+        I started Food Ninja in 2020 as a way to document my culinary
+        adventures around the world. What began as a personal journal has
+        grown into a community of food enthusiasts who share a curiosity
+        about food, culture, and the connections between them.
+      </p>
+
+      <p>
+        From hidden izakayas in Tokyo to street food in Vietnam, from family
+        recipes passed down through generations to the science behind why we
+        crave certain flavors—there's always more to discover about food.
+      </p>
+
+      <h2>What I Write About</h2>
+
+      <p>Food Ninja covers four main areas:</p>
+
+      <ul>
+        <li>Travel — Food experiences and culinary adventures around the world</li>
+        <li>Food Theory — The science, history, and culture behind food and cooking</li>
+        <li>Recipes — Tested recipes and techniques worth mastering</li>
+        <li>Restaurants — Hidden gems and notable dining experiences</li>
+      </ul>
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        I'd love to hear from you! Whether you have a restaurant
+        recommendation, a recipe to share, or just want to chat about food,
+        reach out on the contact page.
+      </p>
+    </div>
+  )
 }
 
 export default AboutPage
