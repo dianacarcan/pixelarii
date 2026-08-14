@@ -1,10 +1,4 @@
 function ContactPage() {
-<<<<<<< HEAD
-  return <h1>Contact</h1>
-}
-
-export default ContactPage
-=======
   return (
     <div className="container">
       <h1>Get in Touch</h1>
@@ -38,4 +32,3 @@ export default ContactPage
 }
 
 export default ContactPage
->>>>>>> lexi

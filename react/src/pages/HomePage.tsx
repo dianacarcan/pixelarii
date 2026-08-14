@@ -17,7 +17,9 @@ function HomePage() {
 
       <Stack>
         {articles.map((article: Article) => (
-          <ArticleCard 
+          <ArticleCard
+            key={article.id}
+            id={article.id}
             imageUrl={article.imageUrl}
             label={article.label}
             title={article.title}
