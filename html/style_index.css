@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
         display: flex;
         flex-direction: column;
         font-family: Arial, sans-serif;
@@ -7,6 +8,10 @@ body {
         text-align: center;
         margin: 0;
         padding: 0;
+=======
+        font-family: Arial, sans-serif;
+        background-color: white;
+>>>>>>> lexi
       }
 
       .container {
@@ -15,6 +20,7 @@ body {
         margin-top: 40px;
       }
 
+<<<<<<< HEAD
       header {
         display: flex;
         border-bottom: 5px;
@@ -35,29 +41,44 @@ body {
         margin-right: 20px;
         align-self:flex-end;
         
+=======
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 60px;
+        border-bottom: 1px solid lightgray;
+>>>>>>> lexi
       }
 
       nav ul {
         display: flex;
         list-style: none;
+<<<<<<< HEAD
         justify-content: flex-end;
         margin-right: 20px;
         
+=======
+>>>>>>> lexi
       }
 
       nav li {
         margin-left: 30px;
       }
 
+<<<<<<< HEAD
       nav li:hover {
         color: black;
       }
 
+=======
+>>>>>>> lexi
       nav a {
         text-decoration: none;
         color: gray;
       }
 
+<<<<<<< HEAD
       nav a:hover {
       color: black;
       }
@@ -70,6 +91,13 @@ body {
         margin: 0;
         white-space: nowrap;
         
+=======
+      h1 {
+        margin-bottom: 5px;
+        font-family: "Times New Roman", Times, serif;
+        color: navy;
+        font-size: 56px;
+>>>>>>> lexi
       }
 
       h4 {
@@ -80,15 +108,20 @@ body {
       }
 
       h3 {
+<<<<<<< HEAD
         font-size: 20px;
         color: #72757c;
         font-weight: 300;
         margin-top: 0px;
         margin-bottom: 30px;
+=======
+        font-size: 30px;
+>>>>>>> lexi
       }
 
       h2 {
         margin-top: 60px;
+<<<<<<< HEAD
         margin-bottom: 10px;
         font-family: "Times New Roman", Times, serif;
         font-size: 50px;
@@ -133,12 +166,21 @@ body {
           color: white;
         }
 
+=======
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 42px;
+        color: #111;
+      }
+
+>>>>>>> lexi
       p {
         font-size: 18px;
         line-height: 1.8;
         color: #222;
       }
 
+<<<<<<< HEAD
       strong {
         font-weight: bold;
         color:#4C4E52;
@@ -149,6 +191,13 @@ body {
         width: 600px;
         padding: 10px;
         margin-bottom: 5px;
+=======
+      input,
+      textarea {
+        width: 500px;
+        padding: 10px;
+        margin-bottom: 15px;
+>>>>>>> lexi
         font-size: 16px;
       }
 
@@ -161,6 +210,7 @@ body {
         background-color: navy;
         color: white;
         padding: 10px 20px;
+<<<<<<< HEAD
         cursor: pointer;
       }
 
@@ -174,6 +224,14 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+=======
+      }
+
+      main {
+        width: 850px;
+        margin-left: 60px;
+        margin-top: 40px;
+>>>>>>> lexi
       }
 
       article {
@@ -199,6 +257,7 @@ body {
         color: white;
         font-size: 12px;
         border-radius: 4px;
+<<<<<<< HEAD
       }
       
       @media (min-width: 768px){
@@ -217,3 +276,6 @@ body {
         }
       }
       
+=======
+      }
+>>>>>>> lexi
