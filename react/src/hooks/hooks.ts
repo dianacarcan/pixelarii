@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { Article, ArticleDetail } from "../types/types"
 
 interface UseArticlesResult {
@@ -20,7 +20,7 @@ export const useArticles = () : UseArticlesResult => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    const reload = () => {
+    const reload = useCallback(() => {
         setLoading(true);
         setError(null);
     fetch('http://localhost:3000/articles')
@@ -33,11 +33,11 @@ export const useArticles = () : UseArticlesResult => {
     .then(setData)
     .catch((error) => setError(error.message))
     .finally(() => setLoading(false));
-    };
+    }, []);
 
     useEffect(() => {
         reload();
-    }, []); // empty array — fetch once, when the component mounts
+    }, [reload]);
 
     return {data, loading, error, reload}
 
@@ -48,7 +48,7 @@ export const useArticle = (slug : string) : UseArticleResult => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    const reload = () => {
+    const reload = useCallback(() => {
         setLoading(true);
         setError(null);
     fetch(`http://localhost:3000/articles/${slug}`)
@@ -61,11 +61,11 @@ export const useArticle = (slug : string) : UseArticleResult => {
     .then(setData)
     .catch((error) => setError(error.message))
     .finally(() => setLoading(false));
-    };
+    }, [slug]);
 
     useEffect(() => {
         reload();
-    }, [slug]); 
+    }, [slug, reload]); 
 
     return {data, loading, error, reload}
 
