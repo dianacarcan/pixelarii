@@ -1,6 +1,6 @@
 import { Box, CardMedia, Chip, Divider, Stack, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-import { Article } from './articles'
+import { Article } from '../../components/articles'
 
 interface ArticleDetailProps {
   article: Article
@@ -24,13 +24,8 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
       <Chip
         label={article.label}
         size="small"
-        sx={{
-          bgcolor: 'primary.main',
-          color: 'primary.contrastText',
-          fontWeight: 700,
-          borderRadius: 1,
-          mb: 2,
-        }}
+        color="primary"
+        sx={{ borderRadius: 1, mb: 2 }}
       />
 
       <Typography variant="h1" sx={{ fontSize: { xs: '2rem', md: '2.5rem' }, mb: 2 }}>
@@ -76,7 +71,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
         I went to Greece thinking I was going on a food trip. I came back understanding something much harder to name.
       </Typography>
 
-      <Typography variant="h2" sx={{ fontSize: '1.5rem', mb: 2 }}>
+      <Typography variant="h2" sx={{ mb: 2 }}>
         Day one: arriving hungry
       </Typography>
 
@@ -94,7 +89,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
         The markets in Athens are nothing like what you expect. Yes, there are olives — stacked in barrels, dozens of varieties, each with its own personality. But what gets you is the pace. Nobody rushes. The man behind the cheese counter has been cutting the same feta for thirty years and he will tell you exactly why that matters, in Greek, whether you understand it or not.
       </Typography>
 
-      <Typography variant="h2" sx={{ fontSize: '1.5rem', mb: 2 }}>
+      <Typography variant="h2" sx={{ mb: 2 }}>
         The islands change everything
       </Typography>
 
@@ -106,7 +101,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
         Santorini's food is overpriced and the views are, frankly, absurd. Oia at sunset feels like someone turned the saturation up past what reality permits. But the best meal I had there wasn't at a clifftop restaurant — it was a paper plate of grilled octopus from a fisherman who had a cooler and a portable grill and absolutely no menu.
       </Typography>
 
-      <Typography variant="h2" sx={{ fontSize: '1.5rem', mb: 2 }}>
+      <Typography variant="h2" sx={{ mb: 2 }}>
         What I actually learned
       </Typography>
 

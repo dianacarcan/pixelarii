@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { Container, Typography } from '@mui/material'
 import { articles } from '../components/articles'
-import { ArticleDetail } from '../components/ArticleDetail'
+import { ArticleDetail } from '../features/articles/ArticleDetail'
 
 function ArticlePage() {
   const { id } = useParams()
