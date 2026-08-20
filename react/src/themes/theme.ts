@@ -8,7 +8,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: "#1B1B4B",
-            contrastText: "#F7F4EA", 
+            contrastText: "#F7F4EA",
         },
         background: {
             default: "#F7F4EA",
@@ -23,6 +23,7 @@ const theme = createTheme({
         },
         h2: {
             fontFamily: '"Playfair Display", serif',
+            fontSize: '1.5rem',
         },
         h3: {
             fontFamily: '"Playfair Display", serif',
@@ -35,6 +36,15 @@ const theme = createTheme({
         },
         h6: {
             fontFamily: '"Playfair Display", serif',
+        },
+    },
+    components: {
+        MuiChip: {
+            styleOverrides: {
+                colorPrimary: {
+                    fontWeight: 700,
+                },
+            },
         },
     },
 })
