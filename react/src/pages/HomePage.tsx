@@ -2,7 +2,7 @@ import {ArticleCard} from "../components/ArticleCard.tsx"
 import {Article, articles} from "../components/articles.ts"
 import {CategoryPill} from "../components/CategoryPill.tsx";
 import {Container, Stack, Typography} from '@mui/material'
-import SearchBar from "../components/SearchBar.tsx"
+import {SearchBar} from "../components/SearchBar.tsx"
 
 function HomePage() {
   return (

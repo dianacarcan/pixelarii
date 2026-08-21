@@ -1,11 +1,16 @@
 import {Container, TextField} from '@mui/material'
+import { useState } from 'react'
 
-function SearchBar() {
+const [Search, setSearch] = useState<string | null>(null)
+
+export function SearchBar() {
+  
   return (
     <Container>
-      <TextField placeholder="Search articles" />
+      <TextField 
+        value={Search || ''} 
+        onChange={(e) => setSearch(e.target.value)} 
+      />
     </Container>
   )
 }
-
-export default SearchBar
