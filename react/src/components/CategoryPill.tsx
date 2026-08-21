@@ -1,12 +1,23 @@
 import {Stack, Chip} from '@mui/material'
-import {Label} from "./articles.ts";
+interface CategoryPillProps {
+    label: string;
+    selected: boolean;
+    onClick: () => void;
+}
 
-export const CategoryPill = () => {
+export default function CategoryPill({ 
+    label,
+    selected, 
+    onClick 
+}: CategoryPillProps) {
     return (
         <Stack direction="row" spacing={2}>
-            {Label.map((label, index) => (
-                <Chip key={index} label={label} />
-            ))}
+            <Chip key={label} label={label} onClick={onClick} /><Chip
+      label={label}
+      onClick={onClick}
+      color={selected ? "primary" : "default"}
+      variant={selected ? "filled" : "outlined"}
+    />
         </Stack>
     );
 }

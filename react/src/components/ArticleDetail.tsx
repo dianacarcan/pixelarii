@@ -37,7 +37,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
         {article.title}
       </Typography>
 
-      <Stack direction="row" spacing={1.5} alignItems="center" sx={{ mb: 3 }}>
+      <Stack direction="row" spacing={1.5} sx={{ mb: 3 }}>
         <Box
           sx={{
             width: 36,
@@ -56,7 +56,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
         >
           {article.authorInitials}
         </Box>
-        <Typography variant="body2" fontWeight={600}>{article.author}</Typography>
+        <Typography variant="body2">{article.author}</Typography>
         <Typography variant="body2" color="text.secondary">{article.date}</Typography>
         <Typography variant="body2" color="text.secondary">{article.read_time} min read</Typography>
       </Stack>
@@ -85,7 +85,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
       </Typography>
 
       <Box sx={{ borderLeft: '3px solid', borderColor: 'primary.main', pl: 2, my: 3 }}>
-        <Typography variant="body1" fontStyle="italic">
+        <Typography variant="body1" sx={{ fontStyle: 'italic' }}>
           "Food in Greece isn't a meal, it's an argument. Every taverna owner believes their grandmother invented the recipe, and honestly, they might be right."
         </Typography>
       </Box>
@@ -120,7 +120,7 @@ export const ArticleDetail = ({ article }: ArticleDetailProps) => {
 
       <Divider sx={{ my: 3 }} />
 
-      <Stack direction="row" spacing={1} flexWrap="wrap">
+      <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1 }}>
         {article.tags.map((tag) => (
           <Chip key={tag} label={tag} variant="outlined" size="small" />
         ))}

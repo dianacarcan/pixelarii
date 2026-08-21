@@ -1,8 +1,8 @@
 import {ArticleCard} from "../components/ArticleCard.tsx"
 import {Article, articles} from "../components/articles.ts"
-import {CategoryPill} from "../components/CategoryPill.tsx";
+import CategoryPill from "../components/CategoryPill.tsx";
 import {Container, Stack, Typography} from '@mui/material'
-import {SearchBar} from "../components/SearchBar.tsx"
+import SearchBar from "../components/SearchBar.tsx"
 
 function HomePage() {
   return (
@@ -10,8 +10,8 @@ function HomePage() {
       <Container id="Title">
         <Typography variant="h1">The Food Ninja Blog</Typography>
         <Typography variant="h2">A blog about food, experiences, and recipes</Typography>
-        <SearchBar />
-        <CategoryPill />
+        <SearchBar query={""} setQuery={() => {}} />
+        <CategoryPill label="All" selected={true} onClick={() => {}} />
       </Container>
       
 
