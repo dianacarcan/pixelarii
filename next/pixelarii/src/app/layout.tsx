@@ -3,6 +3,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "@/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import { FC } from "react";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,11 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
     <html lang="en">
       <body>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
